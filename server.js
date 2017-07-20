@@ -14,10 +14,6 @@ app.get('/', function(req, res) {
     res.send('./public/index.html');
 })
 
-// app.get('/download', function(req, res) {
-//   res.download('./library/server.js', 'server.js')
-// });
-
 app.get('/download', function(req, res) {
 var zip = new Zip;
 zip.file("./myproject/server.js", fs.readFileSync("./library/server.js"));
@@ -30,6 +26,11 @@ fs.writeFile('test1.zip', zip.generate(options), 'binary', function (error) {
   console.log('wrote test1.zip', error);
 });
 });
+
+app.post('/preview', function(req, res) {
+	var data = req.body;
+	console.log(data);
+})
 
 app.listen(PORT, function() {
 		console.log("App.listening on PORT " + PORT);

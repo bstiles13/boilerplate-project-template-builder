@@ -1,0 +1,39 @@
+html, body {
+    width: 100%;
+    /* background-color: cornflowerblue; */
+}
+
+ .checkbox {
+    display: none;
+}  
+
+.checkbox + label {
+    cursor: pointer;
+}
+
+.checkbox:checked + label {
+  background-color: orange;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
+#form > nav {
+    width: 300px;
+    margin: 0 30px;
+}
+
+aside, .menu-list, .button {
+    width: 100%;
+}
+
+.navbar {
+    margin-bottom: 50px;
+}
+
+#logo {
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+}

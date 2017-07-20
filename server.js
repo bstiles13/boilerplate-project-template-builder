@@ -1,29 +1,36 @@
-
-const express 		= require("express");
-const bodyParser 	= require("body-parser");
-const exphbs 		= require("express-handlebars");
+const express = require('express');
+const bodyParser = require('body-parser');
+const PORT = process.ENV || 9000;
+const fs = require('fs');
+var Zip = require('node-zip');
 
 var app = express();
 
-var PORT = process.env.PORT || 9000;
-
-var db = require("./models");
-
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.text());
-app.use(bodyParser.json({type: "application/vnd.api+json"}));
+app.use(express.static(__dirname + "/public"));
 
-app.use(express.static("./public"));
+app.get('/', function(req, res) {
+    res.send('./public/index.html');
+})
 
-require("./controllers/controller.js")(app);
-require("./controllers/admin-html-routes.js")(app);
+// app.get('/download', function(req, res) {
+//   res.download('./library/server.js', 'server.js')
+// });
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+app.get('/download', function(req, res) {
+var zip = new Zip;
+zip.file("./myproject/server.js", fs.readFileSync("./library/server.js"));
+zip.file("./myproject/package.json", fs.readFileSync("./library/package.json"));
+zip.file("./myproject/webpack.config.js", fs.readFileSync("./library/webpack.config.js"));
+zip.file("./myproject/public/index.html", fs.readFileSync("./library/index.html"));
+var options = {base64: false, compression:'DEFLATE'};
+fs.writeFile('test1.zip', zip.generate(options), 'binary', function (error) {
+	res.download('test1.zip');
+  console.log('wrote test1.zip', error);
+});
+});
 
-db.sequelize.sync().then(function() {
-	app.listen(PORT, function() {
+app.listen(PORT, function() {
 		console.log("App.listening on PORT " + PORT);
-	});
 });

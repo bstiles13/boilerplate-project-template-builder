@@ -3,6 +3,24 @@ html, body {
     /* background-color: cornflowerblue; */
 }
 
+.navbar {
+    margin-bottom: 50px;
+}
+
+#logo {
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+}
+
+#tint {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    top: 0;
+}
+
  .checkbox {
     display: none;
 }  
@@ -23,17 +41,30 @@ html, body {
 #form > nav {
     width: 300px;
     margin: 0 30px;
+    z-index: -2
+}
+
+nav {
+    background-color: PapayaWhip;
 }
 
 aside, .menu-list, .button {
     width: 100%;
 }
 
-.navbar {
+#submit {
+    position: absolute;
+    bottom: 150px;
+    width: 100px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 50px;
 }
 
-#logo {
-    font-family: 'Righteous', cursive;
-    font-size: 25px;
+.menu-item {
+    width: 200px;
 }

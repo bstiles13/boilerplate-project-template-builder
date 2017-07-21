@@ -3,12 +3,14 @@ const bodyParser = require('body-parser');
 const PORT = process.ENV || 9000;
 const fs = require('fs');
 var Zip = require('node-zip');
+var routes = require('./routes/routes.js');
 
 var app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
+app.use("/", routes);
 
 app.get('/', function(req, res) {
     res.send('./public/index.html');
@@ -26,11 +28,6 @@ fs.writeFile('test1.zip', zip.generate(options), 'binary', function (error) {
   console.log('wrote test1.zip', error);
 });
 });
-
-app.post('/preview', function(req, res) {
-	var data = req.body;
-	console.log(data);
-})
 
 app.listen(PORT, function() {
 		console.log("App.listening on PORT " + PORT);

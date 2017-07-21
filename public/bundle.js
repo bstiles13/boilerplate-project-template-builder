@@ -789,7 +789,7 @@ module.exports = ExecutionEnvironment;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(18);
 
 var ReactCurrentOwner = __webpack_require__(10);
 
@@ -1287,7 +1287,7 @@ var _prodInvariant = __webpack_require__(3),
 var CallbackQueue = __webpack_require__(61);
 var PooledClass = __webpack_require__(15);
 var ReactFeatureFlags = __webpack_require__(62);
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 var Transaction = __webpack_require__(28);
 
 var invariant = __webpack_require__(1);
@@ -2478,6 +2478,16 @@ module.exports = PooledClass;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+module.exports = __webpack_require__(17);
+
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -2612,7 +2622,7 @@ module.exports = React;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2656,7 +2666,7 @@ function reactProdInvariant(code) {
 module.exports = reactProdInvariant;
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2828,7 +2838,7 @@ module.exports = ReactReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2951,7 +2961,7 @@ DOMLazyTree.queueText = queueText;
 module.exports = DOMLazyTree;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2967,7 +2977,7 @@ module.exports = DOMLazyTree;
 
 
 
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 var EventPluginUtils = __webpack_require__(34);
 
 var accumulateInto = __webpack_require__(58);
@@ -3091,7 +3101,7 @@ module.exports = EventPropagators;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3371,7 +3381,7 @@ module.exports = EventPluginHub;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3435,7 +3445,7 @@ SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 module.exports = SyntheticUIEvent;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3484,16 +3494,6 @@ var ReactInstanceMap = {
 };
 
 module.exports = ReactInstanceMap;
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(16);
-
 
 /***/ }),
 /* 25 */
@@ -4063,7 +4063,7 @@ module.exports = TransactionImpl;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 var ViewportMetrics = __webpack_require__(65);
 
 var getEventModifierState = __webpack_require__(38);
@@ -5237,7 +5237,7 @@ module.exports = getEventModifierState;
 
 
 
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var Danger = __webpack_require__(118);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstrumentation = __webpack_require__(8);
@@ -5536,7 +5536,7 @@ var _prodInvariant = __webpack_require__(3);
 var ReactPropTypesSecret = __webpack_require__(70);
 var propTypesFactory = __webpack_require__(55);
 
-var React = __webpack_require__(16);
+var React = __webpack_require__(17);
 var PropTypes = propTypesFactory(React.isValidElement);
 
 var invariant = __webpack_require__(1);
@@ -5912,7 +5912,7 @@ module.exports = KeyEscapeUtils;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(10);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactUpdates = __webpack_require__(11);
 
@@ -6581,7 +6581,7 @@ module.exports = getEventCharCode;
 
 
 
-var _prodInvariant = __webpack_require__(17),
+var _prodInvariant = __webpack_require__(18),
     _assign = __webpack_require__(4);
 
 var ReactNoopUpdateQueue = __webpack_require__(51);
@@ -8594,7 +8594,7 @@ module.exports = instantiateReactComponent;
 
 var _prodInvariant = __webpack_require__(3);
 
-var React = __webpack_require__(16);
+var React = __webpack_require__(17);
 
 var invariant = __webpack_require__(1);
 
@@ -9192,19 +9192,19 @@ module.exports = getActiveElement;
 
 var _prodInvariant = __webpack_require__(3);
 
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var DOMProperty = __webpack_require__(13);
-var React = __webpack_require__(16);
+var React = __webpack_require__(17);
 var ReactBrowserEventEmitter = __webpack_require__(32);
 var ReactCurrentOwner = __webpack_require__(10);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDOMContainerInfo = __webpack_require__(174);
 var ReactDOMFeatureFlags = __webpack_require__(175);
 var ReactFeatureFlags = __webpack_require__(62);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactMarkupChecksum = __webpack_require__(176);
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 var ReactUpdateQueue = __webpack_require__(47);
 var ReactUpdates = __webpack_require__(11);
 
@@ -9759,7 +9759,7 @@ module.exports = getHostComponentFromComposite;
 "use strict";
 
 
-var _react = __webpack_require__(24);
+var _react = __webpack_require__(16);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -9989,7 +9989,7 @@ module.exports = ReactChildren;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(18);
 
 var invariant = __webpack_require__(1);
 
@@ -10106,7 +10106,7 @@ module.exports = PooledClass;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(18);
 
 var ReactCurrentOwner = __webpack_require__(10);
 var REACT_ELEMENT_TYPE = __webpack_require__(52);
@@ -10527,7 +10527,7 @@ module.exports = ReactDOMFactories;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(18);
 
 var ReactPropTypeLocationNames = __webpack_require__(89);
 var ReactPropTypesSecret = __webpack_require__(90);
@@ -12212,7 +12212,7 @@ module.exports = factory;
  */
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(18);
 
 var ReactElement = __webpack_require__(14);
 
@@ -12272,7 +12272,7 @@ module.exports = __webpack_require__(99);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDefaultInjection = __webpack_require__(100);
 var ReactMount = __webpack_require__(80);
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 var ReactUpdates = __webpack_require__(11);
 var ReactVersion = __webpack_require__(178);
 
@@ -12554,7 +12554,7 @@ module.exports = ARIADOMPropertyConfig;
 
 
 
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ExecutionEnvironment = __webpack_require__(6);
 var FallbackCompositionState = __webpack_require__(103);
 var SyntheticCompositionEvent = __webpack_require__(104);
@@ -13126,8 +13126,8 @@ module.exports = SyntheticInputEvent;
 
 
 
-var EventPluginHub = __webpack_require__(21);
-var EventPropagators = __webpack_require__(20);
+var EventPluginHub = __webpack_require__(22);
+var EventPropagators = __webpack_require__(21);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(11);
@@ -14183,7 +14183,7 @@ module.exports = DefaultEventPluginOrder;
 
 
 
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(5);
 var SyntheticMouseEvent = __webpack_require__(29);
 
@@ -14562,7 +14562,7 @@ module.exports = ReactComponentBrowserEnvironment;
 
 var _prodInvariant = __webpack_require__(3);
 
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var ExecutionEnvironment = __webpack_require__(6);
 
 var createNodesFromMarkup = __webpack_require__(119);
@@ -14981,11 +14981,11 @@ var _prodInvariant = __webpack_require__(3),
 
 var AutoFocusUtils = __webpack_require__(124);
 var CSSPropertyOperations = __webpack_require__(125);
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var DOMNamespaces = __webpack_require__(40);
 var DOMProperty = __webpack_require__(13);
 var DOMPropertyOperations = __webpack_require__(69);
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 var EventPluginRegistry = __webpack_require__(27);
 var ReactBrowserEventEmitter = __webpack_require__(32);
 var ReactDOMComponentFlags = __webpack_require__(57);
@@ -16555,7 +16555,7 @@ module.exports = quoteAttributeValueForBrowser;
 
 
 
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 
 function runEventQueueInBatch(events) {
   EventPluginHub.enqueueEvents(events);
@@ -16993,7 +16993,7 @@ module.exports = ReactDOMInput;
 
 var _assign = __webpack_require__(4);
 
-var React = __webpack_require__(16);
+var React = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDOMSelect = __webpack_require__(71);
 
@@ -17288,11 +17288,11 @@ module.exports = ReactDOMTextarea;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactComponentEnvironment = __webpack_require__(43);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 
 var ReactCurrentOwner = __webpack_require__(10);
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 var ReactChildReconciler = __webpack_require__(139);
 
 var emptyFunction = __webpack_require__(9);
@@ -17737,7 +17737,7 @@ module.exports = ReactMultiChild;
 
 
 
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 
 var instantiateReactComponent = __webpack_require__(72);
 var KeyEscapeUtils = __webpack_require__(46);
@@ -17899,14 +17899,14 @@ module.exports = ReactChildReconciler;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var React = __webpack_require__(16);
+var React = __webpack_require__(17);
 var ReactComponentEnvironment = __webpack_require__(43);
 var ReactCurrentOwner = __webpack_require__(10);
 var ReactErrorUtils = __webpack_require__(35);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactNodeTypes = __webpack_require__(73);
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 
 if (process.env.NODE_ENV !== 'production') {
   var checkReactTypeSpec = __webpack_require__(141);
@@ -19348,7 +19348,7 @@ module.exports = ReactServerUpdateQueue;
 
 var _assign = __webpack_require__(4);
 
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var ReactDOMComponentTree = __webpack_require__(5);
 
 var ReactDOMEmptyComponent = function (instantiate) {
@@ -19557,7 +19557,7 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var DOMChildrenOperations = __webpack_require__(39);
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var ReactDOMComponentTree = __webpack_require__(5);
 
 var escapeTextContentForBrowser = __webpack_require__(31);
@@ -19999,7 +19999,7 @@ module.exports = getUnboundedScrollPosition;
 
 
 var DOMProperty = __webpack_require__(13);
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 var EventPluginUtils = __webpack_require__(34);
 var ReactComponentEnvironment = __webpack_require__(43);
 var ReactEmptyComponent = __webpack_require__(74);
@@ -20929,7 +20929,7 @@ module.exports = SVGDOMPropertyConfig;
 
 
 
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInputSelection = __webpack_require__(78);
@@ -21126,7 +21126,7 @@ module.exports = SelectEventPlugin;
 var _prodInvariant = __webpack_require__(3);
 
 var EventListener = __webpack_require__(77);
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(5);
 var SyntheticAnimationEvent = __webpack_require__(165);
 var SyntheticClipboardEvent = __webpack_require__(166);
@@ -21137,7 +21137,7 @@ var SyntheticMouseEvent = __webpack_require__(29);
 var SyntheticDragEvent = __webpack_require__(170);
 var SyntheticTouchEvent = __webpack_require__(171);
 var SyntheticTransitionEvent = __webpack_require__(172);
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 var SyntheticWheelEvent = __webpack_require__(173);
 
 var emptyFunction = __webpack_require__(9);
@@ -21441,7 +21441,7 @@ module.exports = SyntheticClipboardEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 
 /**
  * @interface FocusEvent
@@ -21482,7 +21482,7 @@ module.exports = SyntheticFocusEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 
 var getEventCharCode = __webpack_require__(49);
 var getEventKey = __webpack_require__(169);
@@ -21729,7 +21729,7 @@ module.exports = SyntheticDragEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 
 var getEventModifierState = __webpack_require__(38);
 
@@ -22069,7 +22069,7 @@ var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(10);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 
 var getHostComponentFromComposite = __webpack_require__(81);
 var invariant = __webpack_require__(1);
@@ -22414,7 +22414,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(24);
+var _react = __webpack_require__(16);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -22422,9 +22422,17 @@ var _Navbar = __webpack_require__(185);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
-var _Form = __webpack_require__(186);
+var _Menu = __webpack_require__(186);
+
+var _Menu2 = _interopRequireDefault(_Menu);
+
+var _Form = __webpack_require__(187);
 
 var _Form2 = _interopRequireDefault(_Form);
+
+var _Tint = __webpack_require__(188);
+
+var _Tint2 = _interopRequireDefault(_Tint);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22444,7 +22452,9 @@ var Main = function (_React$Component) {
                 'div',
                 null,
                 _react2.default.createElement(_Navbar2.default, null),
-                _react2.default.createElement(_Form2.default, null)
+                _react2.default.createElement(_Menu2.default, { setProject: this.setProject.bind(this) }),
+                _react2.default.createElement(_Form2.default, { project: this.state.project }),
+                _react2.default.createElement(_Tint2.default, null)
             );
         }
     }]);
@@ -22455,10 +22465,24 @@ var Main = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
         _this.state = {
-            placeholder: 'placeholder'
+            project: ''
         };
         return _this;
     }
+
+    _createClass(Main, [{
+        key: 'componentDidUpdate',
+        value: function componentDidUpdate() {
+            console.log(this.state.project);
+        }
+    }, {
+        key: 'setProject',
+        value: function setProject(e) {
+            console.log(e.target.value);
+            this.setState({ project: e.target.value });
+            document.getElementById("form").reset();
+        }
+    }]);
 
     return Main;
 }(_react2.default.Component);
@@ -22478,7 +22502,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(24);
+var _react = __webpack_require__(16);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -22510,7 +22534,7 @@ var Navbar = function (_React$Component) {
                     { className: "navbar-brand" },
                     _react2.default.createElement(
                         "a",
-                        { className: "navbar-item", href: "#" },
+                        { className: "navbar-item", href: "/" },
                         _react2.default.createElement(
                             "span",
                             { id: "logo" },
@@ -22519,7 +22543,7 @@ var Navbar = function (_React$Component) {
                         _react2.default.createElement(
                             "span",
                             null,
-                            "Template Maker"
+                            "Templates Made Easy"
                         )
                     ),
                     _react2.default.createElement(
@@ -22552,7 +22576,87 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(24);
+var _react = __webpack_require__(16);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Menu = function (_React$Component) {
+    _inherits(Menu, _React$Component);
+
+    _createClass(Menu, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { id: 'menu' },
+                _react2.default.createElement(
+                    'h3',
+                    { style: style.font },
+                    'Get Started'
+                ),
+                _react2.default.createElement('input', { onClick: this.props.setProject, id: 'front', className: 'checkbox', type: 'radio', name: 'menu', value: 'front' }),
+                _react2.default.createElement(
+                    'label',
+                    { className: 'button menu-item', htmlFor: 'front' },
+                    'Front'
+                ),
+                _react2.default.createElement('input', { onClick: this.props.setProject, id: 'back', className: 'checkbox', type: 'radio', name: 'menu', value: 'back' }),
+                _react2.default.createElement(
+                    'label',
+                    { className: 'button menu-item', htmlFor: 'back' },
+                    'Back'
+                ),
+                _react2.default.createElement('input', { onClick: this.props.setProject, id: 'full', className: 'checkbox', type: 'radio', name: 'menu', value: 'full' }),
+                _react2.default.createElement(
+                    'label',
+                    { className: 'button menu-item', htmlFor: 'full' },
+                    'Applications'
+                )
+            );
+        }
+    }]);
+
+    function Menu(props) {
+        _classCallCheck(this, Menu);
+
+        return _possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).call(this, props));
+    }
+
+    return Menu;
+}(_react2.default.Component);
+
+var style = {
+    font: {
+        color: 'ivory',
+        fontSize: '20px',
+        fontWeight: 'bold'
+    }
+};
+
+exports.default = Menu;
+
+/***/ }),
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(16);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -22572,10 +22676,10 @@ var Form = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'form',
-                { id: 'form', action: '/preview', method: 'POST' },
+                { id: 'form', action: '/download', method: 'POST' },
                 _react2.default.createElement(
                     'nav',
-                    { className: 'panel' },
+                    { className: 'panel', style: this.props.project != 'front' ? style.back : style.front },
                     _react2.default.createElement(
                         'p',
                         { className: 'panel-heading' },
@@ -22586,10 +22690,10 @@ var Form = function (_React$Component) {
                         { className: 'panel-block' },
                         _react2.default.createElement(
                             'aside',
-                            { 'class': 'menu' },
+                            { className: 'menu' },
                             _react2.default.createElement(
                                 'p',
-                                { 'class': 'menu-label' },
+                                { className: 'menu-label' },
                                 'HTML'
                             ),
                             _react2.default.createElement(
@@ -22601,7 +22705,7 @@ var Form = function (_React$Component) {
                                     _react2.default.createElement(
                                         'a',
                                         null,
-                                        _react2.default.createElement('input', { id: 'html', className: 'checkbox', type: 'checkbox', name: 'html', value: 'html', disabled: this.state.toggle ? 'disabled' : '' }),
+                                        _react2.default.createElement('input', { id: 'html', className: 'checkbox', type: 'checkbox', name: 'html', value: 'html', disabled: this.props.project != "front" ? 'disabled' : '' }),
                                         _react2.default.createElement(
                                             'label',
                                             { className: 'button', htmlFor: 'html' },
@@ -22623,7 +22727,7 @@ var Form = function (_React$Component) {
                                         _react2.default.createElement(
                                             'li',
                                             null,
-                                            _react2.default.createElement('input', { id: 'checkbox_id', className: 'checkbox', type: 'checkbox', value: 'jquery', name: 'javascript' }),
+                                            _react2.default.createElement('input', { id: 'checkbox_id', className: 'checkbox', type: 'checkbox', value: 'jquery', name: 'javascript', disabled: this.props.project != "front" ? 'disabled' : '' }),
                                             _react2.default.createElement(
                                                 'label',
                                                 { className: 'button', htmlFor: 'checkbox_id' },
@@ -22633,7 +22737,7 @@ var Form = function (_React$Component) {
                                         _react2.default.createElement(
                                             'li',
                                             null,
-                                            _react2.default.createElement('input', { id: 'bootstrap', className: 'checkbox', type: 'radio', value: 'bootstrap', name: 'css' }),
+                                            _react2.default.createElement('input', { id: 'bootstrap', className: 'checkbox', type: 'radio', value: 'bootstrap', name: 'css', disabled: this.props.project != "front" ? 'disabled' : '' }),
                                             _react2.default.createElement(
                                                 'label',
                                                 { className: 'button', htmlFor: 'bootstrap' },
@@ -22643,7 +22747,7 @@ var Form = function (_React$Component) {
                                         _react2.default.createElement(
                                             'li',
                                             null,
-                                            _react2.default.createElement('input', { id: 'mdl', className: 'checkbox', type: 'radio', value: 'mdl', name: 'css' }),
+                                            _react2.default.createElement('input', { id: 'mdl', className: 'checkbox', type: 'radio', value: 'mdl', name: 'css', disabled: this.props.project != "front" ? 'disabled' : '' }),
                                             _react2.default.createElement(
                                                 'label',
                                                 { className: 'button', htmlFor: 'mdl' },
@@ -22653,7 +22757,7 @@ var Form = function (_React$Component) {
                                         _react2.default.createElement(
                                             'li',
                                             null,
-                                            _react2.default.createElement('input', { id: 'materialize', className: 'checkbox', type: 'radio', value: 'materialize', name: 'css' }),
+                                            _react2.default.createElement('input', { id: 'materialize', className: 'checkbox', type: 'radio', value: 'materialize', name: 'css', disabled: this.props.project != "front" ? 'disabled' : '' }),
                                             _react2.default.createElement(
                                                 'label',
                                                 { className: 'button', htmlFor: 'materialize' },
@@ -22663,7 +22767,7 @@ var Form = function (_React$Component) {
                                         _react2.default.createElement(
                                             'li',
                                             null,
-                                            _react2.default.createElement('input', { id: 'bulma', className: 'checkbox', type: 'radio', value: 'bulma', name: 'css' }),
+                                            _react2.default.createElement('input', { id: 'bulma', className: 'checkbox', type: 'radio', value: 'bulma', name: 'css', disabled: this.props.project != "front" ? 'disabled' : '' }),
                                             _react2.default.createElement(
                                                 'label',
                                                 { className: 'button', htmlFor: 'bulma' },
@@ -22678,7 +22782,7 @@ var Form = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     'nav',
-                    { className: 'panel' },
+                    { className: 'panel', style: this.props.project != 'back' ? style.back : style.front },
                     _react2.default.createElement(
                         'p',
                         { className: 'panel-heading' },
@@ -22689,10 +22793,10 @@ var Form = function (_React$Component) {
                         { className: 'panel-block' },
                         _react2.default.createElement(
                             'aside',
-                            { 'class': 'menu' },
+                            { className: 'menu' },
                             _react2.default.createElement(
                                 'p',
-                                { 'class': 'menu-label' },
+                                { className: 'menu-label' },
                                 'Server'
                             ),
                             _react2.default.createElement(
@@ -22701,7 +22805,7 @@ var Form = function (_React$Component) {
                                 _react2.default.createElement(
                                     'li',
                                     null,
-                                    _react2.default.createElement('input', { id: 'http', className: 'checkbox', type: 'radio', value: 'http', name: 'server' }),
+                                    _react2.default.createElement('input', { id: 'http', className: 'checkbox', type: 'radio', value: 'http', name: 'back', disabled: this.props.project != "back" ? 'disabled' : '' }),
                                     _react2.default.createElement(
                                         'label',
                                         { className: 'button', htmlFor: 'http' },
@@ -22711,11 +22815,60 @@ var Form = function (_React$Component) {
                                 _react2.default.createElement(
                                     'li',
                                     null,
-                                    _react2.default.createElement('input', { id: 'express', className: 'checkbox', type: 'radio', value: 'express', name: 'server' }),
+                                    _react2.default.createElement('input', { id: 'express', className: 'checkbox', type: 'radio', value: 'express', name: 'back', disabled: this.props.project != "back" ? 'disabled' : '' }),
                                     _react2.default.createElement(
                                         'label',
                                         { className: 'button', htmlFor: 'express' },
                                         'Express'
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'menu-label' },
+                                'Database'
+                            ),
+                            _react2.default.createElement(
+                                'ul',
+                                { className: 'menu-list' },
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement('input', { id: 'mysql', className: 'checkbox', type: 'radio', value: 'mysql', name: 'back', disabled: this.props.project != "back" ? 'disabled' : '' }),
+                                    _react2.default.createElement(
+                                        'label',
+                                        { className: 'button', htmlFor: 'mysql' },
+                                        'MySQL'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement('input', { id: 'sequelize', className: 'checkbox', type: 'radio', value: 'sequelize', name: 'back', disabled: this.props.project != "back" ? 'disabled' : '' }),
+                                    _react2.default.createElement(
+                                        'label',
+                                        { className: 'button', htmlFor: 'sequelize' },
+                                        'Sequelize'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement('input', { id: 'mongodb', className: 'checkbox', type: 'radio', value: 'mongodb', name: 'back', disabled: this.props.project != "back" ? 'disabled' : '' }),
+                                    _react2.default.createElement(
+                                        'label',
+                                        { className: 'button', htmlFor: 'mongodb' },
+                                        'MongoDB'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement('input', { id: 'mongoose', className: 'checkbox', type: 'radio', value: 'mongoose', name: 'back', disabled: this.props.project != "back" ? 'disabled' : '' }),
+                                    _react2.default.createElement(
+                                        'label',
+                                        { className: 'button', htmlFor: 'mongoose' },
+                                        'Mongoose'
                                     )
                                 )
                             )
@@ -22724,7 +22877,7 @@ var Form = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     'nav',
-                    { className: 'panel' },
+                    { className: 'panel', style: this.props.project != 'full' ? style.back : style.front },
                     _react2.default.createElement(
                         'p',
                         { className: 'panel-heading' },
@@ -22735,14 +22888,14 @@ var Form = function (_React$Component) {
                         { className: 'panel-block' },
                         _react2.default.createElement(
                             'aside',
-                            { 'class': 'menu' },
+                            { className: 'menu' },
                             _react2.default.createElement(
                                 'ul',
                                 { className: 'menu-list' },
                                 _react2.default.createElement(
                                     'li',
                                     null,
-                                    _react2.default.createElement('input', { id: 'react', className: 'checkbox', type: 'radio', value: 'react', name: 'app' }),
+                                    _react2.default.createElement('input', { id: 'react', className: 'checkbox', type: 'radio', value: 'react', name: 'app', disabled: this.props.project != "full" ? 'disabled' : '' }),
                                     _react2.default.createElement(
                                         'label',
                                         { className: 'button', htmlFor: 'react' },
@@ -22756,7 +22909,7 @@ var Form = function (_React$Component) {
                                 _react2.default.createElement(
                                     'li',
                                     null,
-                                    _react2.default.createElement('input', { id: 'vue', className: 'checkbox', type: 'radio', value: 'vue', name: 'app' }),
+                                    _react2.default.createElement('input', { id: 'vue', className: 'checkbox', type: 'radio', value: 'vue', name: 'app', disabled: this.props.project != "full" ? 'disabled' : '' }),
                                     _react2.default.createElement(
                                         'label',
                                         { className: 'button', htmlFor: 'vue' },
@@ -22770,7 +22923,7 @@ var Form = function (_React$Component) {
                                 _react2.default.createElement(
                                     'li',
                                     null,
-                                    _react2.default.createElement('input', { id: 'handlebars', className: 'checkbox', type: 'radio', value: 'handlebars', name: 'app' }),
+                                    _react2.default.createElement('input', { id: 'handlebars', className: 'checkbox', type: 'radio', value: 'handlebars', name: 'app', disabled: this.props.project != "full" ? 'disabled' : '' }),
                                     _react2.default.createElement(
                                         'label',
                                         { className: 'button', htmlFor: 'handlebars' },
@@ -22781,7 +22934,7 @@ var Form = function (_React$Component) {
                         )
                     )
                 ),
-                _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                _react2.default.createElement('input', { id: 'submit', className: 'button is-primary', type: 'submit', value: 'Submit' })
             );
         }
     }]);
@@ -22792,7 +22945,7 @@ var Form = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props));
 
         _this.state = {
-            toggle: false
+            placeholder: 'placeholder'
         };
         return _this;
     }
@@ -22800,7 +22953,62 @@ var Form = function (_React$Component) {
     return Form;
 }(_react2.default.Component);
 
+var style = {
+    front: {
+        zIndex: 0
+    },
+    back: {
+        zIndex: -2
+    }
+};
+
 exports.default = Form;
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(16);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Tint = function (_React$Component) {
+    _inherits(Tint, _React$Component);
+
+    function Tint() {
+        _classCallCheck(this, Tint);
+
+        return _possibleConstructorReturn(this, (Tint.__proto__ || Object.getPrototypeOf(Tint)).apply(this, arguments));
+    }
+
+    _createClass(Tint, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement('div', { id: 'tint' });
+        }
+    }]);
+
+    return Tint;
+}(_react2.default.Component);
+
+exports.default = Tint;
 
 /***/ })
 /******/ ]);

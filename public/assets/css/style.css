@@ -12,6 +12,10 @@ html, body {
     font-size: 25px;
 }
 
+#slogan {
+    padding: 5px 0 0 8px;
+}
+
 #tint {
     position: absolute;
     height: 100%;

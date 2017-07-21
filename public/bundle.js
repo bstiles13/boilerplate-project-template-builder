@@ -22542,7 +22542,7 @@ var Navbar = function (_React$Component) {
                         ),
                         _react2.default.createElement(
                             "span",
-                            null,
+                            { id: "slogan" },
                             "Templates Made Easy"
                         )
                     ),
@@ -22934,7 +22934,7 @@ var Form = function (_React$Component) {
                         )
                     )
                 ),
-                _react2.default.createElement('input', { id: 'submit', className: 'button is-primary is-large', type: 'submit', value: 'Submit' })
+                _react2.default.createElement('input', { id: 'submit', className: 'button is-primary is-large', type: 'submit', value: 'Create' })
             );
         }
     }]);

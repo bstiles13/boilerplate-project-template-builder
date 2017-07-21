@@ -243,6 +243,9 @@ router.post('/download', function(req, res) {
                 }
             });
             break;
+        default:
+            res.send('No project(s) selected.');
+            break;
     }
 
 });

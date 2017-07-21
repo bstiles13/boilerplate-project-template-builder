@@ -6,7 +6,7 @@ class Navbar extends React.Component {
             <nav className="navbar">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="/">
-                    <span id='logo'>Cheat Code</span><span>Templates Made Easy</span>
+                    <span id='logo'>Cheat Code</span><span id='slogan'>Templates Made Easy</span>
                     </a>
 
                     <div className="navbar-burger">

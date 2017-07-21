@@ -1,29 +1,13 @@
 var express = require("express");
+var path = require("path");
 const fs = require('fs');
 var Zip = require('node-zip');
 
 var router = new express.Router();
 
-// router.get('/test', function(req, res) {
-
-//     //Create zip file
-//     var zip = new Zip;
-
-//     //Choose files to include in zip
-//     zip.file("./myproject/server.js", fs.readFileSync("./library/server.js"));
-//     zip.file("./myproject/package.json", fs.readFileSync("./library/package.json"));
-//     zip.file("./myproject/webpack.config.js", fs.readFileSync("./library/webpack.config.js"));
-//     zip.file("./myproject/public/index.html", fs.readFileSync("./library/index.html"));
-
-//     //Zip config
-//     var options = {base64: false, compression:'DEFLATE'};
-
-//     //Send zip to user
-//     fs.writeFile('test1.zip', zip.generate(options), 'binary', function (error) {
-//         res.download('test1.zip');
-//     console.log('wrote test1.zip', error);
-//     });
-// });
+router.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "./public/index.html"));
+});
 
 router.post('/download', function(req, res) {
 
@@ -154,7 +138,7 @@ router.post('/download', function(req, res) {
             zip.file("./myproject/views/index.handlebars", fs.readFileSync("./#templates/applications/handlebars/views/index.handlebars"));
             zip.file("./myproject/views/layouts/main.handlebars", fs.readFileSync("./#templates/applications/handlebars/views/layouts/main.handlebars"));
             break;
-    }
+    }ß
 
     //Zip config
     var options = {base64: false, compression:'DEFLATE'};

@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 var path = require("path");
-const PORT = process.ENV || 9000;
+var PORT = process.env.PORT || 9000;
 const fs = require('fs');
 var Zip = require('node-zip');
 var routes = require('./routes/routes.js');

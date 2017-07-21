@@ -54,8 +54,8 @@ aside, .menu-list, .button {
 
 #submit {
     position: absolute;
-    bottom: 150px;
-    width: 100px;
+    bottom: 0;
+    width: 200px;
 }
 
 #menu {

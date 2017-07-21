@@ -22934,7 +22934,7 @@ var Form = function (_React$Component) {
                         )
                     )
                 ),
-                _react2.default.createElement('input', { id: 'submit', className: 'button is-primary', type: 'submit', value: 'Submit' })
+                _react2.default.createElement('input', { id: 'submit', className: 'button is-primary is-large', type: 'submit', value: 'Submit' })
             );
         }
     }]);

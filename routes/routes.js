@@ -12,7 +12,9 @@ router.get("/", function(req, res) {
 router.post('/download', function(req, res) {
 
     // console.log(req.body);
-    var request = Object.values(req.body);
+    var request = Object.keys(req.body).map(function(key) {
+        return req.body[key];
+    })
     var values = request.join('-');
     console.log(values);
 
@@ -23,7 +25,7 @@ router.post('/download', function(req, res) {
         //Frontend
         case 'html':
             console.log('html');
-            zip.file("./myproject/index.html", fs.readFileSync("./#templates/front/html/index.html"));
+            zip.file("./myproject/index.html", fs.readFileSync("./#templates/front/html/index-plain.html"));
             break;
         case 'html-jquery':
         case 'jquery':
@@ -138,7 +140,7 @@ router.post('/download', function(req, res) {
             zip.file("./myproject/views/index.handlebars", fs.readFileSync("./#templates/applications/handlebars/views/index.handlebars"));
             zip.file("./myproject/views/layouts/main.handlebars", fs.readFileSync("./#templates/applications/handlebars/views/layouts/main.handlebars"));
             break;
-    }ß
+    }
 
     //Zip config
     var options = {base64: false, compression:'DEFLATE'};

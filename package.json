@@ -15,7 +15,8 @@
     "express": "^4.15.3",
     "node-zip": "^1.1.1",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "zip-folder": "^1.0.0"
   },
   "devDependencies": {
     "babel": "^6.23.0",

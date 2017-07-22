@@ -56,12 +56,8 @@ class Form extends React.Component {
                             <ul className="menu-list">
                                 <li><input id="mysql" className='checkbox' type="radio" value="mysql" name="back" disabled={this.props.project != "back" ? 'disabled' : ''} />
                                 <label className='button' htmlFor="mysql">MySQL</label></li>
-                                <li><input id="sequelize" className='checkbox' type="radio" value="sequelize" name="back" disabled={this.props.project != "back" ? 'disabled' : ''} />
-                                <label className='button' htmlFor="sequelize">Sequelize</label></li>
                                 <li><input id="mongodb" className='checkbox' type="radio" value="mongodb" name="back" disabled={this.props.project != "back" ? 'disabled' : ''} />
                                 <label className='button' htmlFor="mongodb">MongoDB</label></li>
-                                <li><input id="mongoose" className='checkbox' type="radio" value="mongoose" name="back" disabled={this.props.project != "back" ? 'disabled' : ''} />
-                                <label className='button' htmlFor="mongoose">Mongoose</label></li>
                             </ul>
                         </aside>
                     </div>
@@ -72,6 +68,9 @@ class Form extends React.Component {
                     </p>
                     <div className="panel-block">
                         <aside className="menu">
+                            <p className="menu-label">
+                                Frameworks & Templates
+                            </p>
                             <ul className="menu-list">
                                 <li><input id="react" className='checkbox' type="radio" value="react" name="app" disabled={this.props.project != "full" ? 'disabled' : ''} />
                                 <label className='button' htmlFor="react">React</label></li>
@@ -83,6 +82,20 @@ class Form extends React.Component {
                             <ul className="menu-list">
                                 <li><input id="handlebars" className='checkbox' type="radio" value="handlebars" name="app" disabled={this.props.project != "full" ? 'disabled' : ''} />
                                 <label className='button' htmlFor="handlebars">Handlebars</label></li>
+                            </ul>
+                            <p className="menu-label">
+                                MySQL
+                            </p>
+                            <ul className="menu-list">
+                                <li><input id="sequelize" className='checkbox' type="radio" value="sequelize" name="app" disabled={this.props.project != "full" ? 'disabled' : ''} />
+                                <label className='button' htmlFor="sequelize">Sequelize</label></li>
+                            </ul>
+                            <p className="menu-label">
+                                MongoDB
+                            </p>
+                            <ul className="menu-list">
+                                <li><input id="mongoose" className='checkbox' type="radio" value="mongoose" name="app" disabled={this.props.project != "full" ? 'disabled' : ''} />
+                                <label className='button' htmlFor="mongoose">Mongoose</label></li>
                             </ul>
                         </aside>
                     </div>

@@ -22837,31 +22837,11 @@ var Form = function (_React$Component) {
                                 _react2.default.createElement(
                                     'li',
                                     null,
-                                    _react2.default.createElement('input', { id: 'sequelize', className: 'checkbox', type: 'radio', value: 'sequelize', name: 'back', disabled: this.props.project != "back" ? 'disabled' : '' }),
-                                    _react2.default.createElement(
-                                        'label',
-                                        { className: 'button', htmlFor: 'sequelize' },
-                                        'Sequelize'
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'li',
-                                    null,
                                     _react2.default.createElement('input', { id: 'mongodb', className: 'checkbox', type: 'radio', value: 'mongodb', name: 'back', disabled: this.props.project != "back" ? 'disabled' : '' }),
                                     _react2.default.createElement(
                                         'label',
                                         { className: 'button', htmlFor: 'mongodb' },
                                         'MongoDB'
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'li',
-                                    null,
-                                    _react2.default.createElement('input', { id: 'mongoose', className: 'checkbox', type: 'radio', value: 'mongoose', name: 'back', disabled: this.props.project != "back" ? 'disabled' : '' }),
-                                    _react2.default.createElement(
-                                        'label',
-                                        { className: 'button', htmlFor: 'mongoose' },
-                                        'Mongoose'
                                     )
                                 )
                             )
@@ -22882,6 +22862,11 @@ var Form = function (_React$Component) {
                         _react2.default.createElement(
                             'aside',
                             { className: 'menu' },
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'menu-label' },
+                                'Frameworks & Templates'
+                            ),
                             _react2.default.createElement(
                                 'ul',
                                 { className: 'menu-list' },
@@ -22921,6 +22906,44 @@ var Form = function (_React$Component) {
                                         'label',
                                         { className: 'button', htmlFor: 'handlebars' },
                                         'Handlebars'
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'menu-label' },
+                                'MySQL'
+                            ),
+                            _react2.default.createElement(
+                                'ul',
+                                { className: 'menu-list' },
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement('input', { id: 'sequelize', className: 'checkbox', type: 'radio', value: 'sequelize', name: 'app', disabled: this.props.project != "full" ? 'disabled' : '' }),
+                                    _react2.default.createElement(
+                                        'label',
+                                        { className: 'button', htmlFor: 'sequelize' },
+                                        'Sequelize'
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'menu-label' },
+                                'MongoDB'
+                            ),
+                            _react2.default.createElement(
+                                'ul',
+                                { className: 'menu-list' },
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement('input', { id: 'mongoose', className: 'checkbox', type: 'radio', value: 'mongoose', name: 'app', disabled: this.props.project != "full" ? 'disabled' : '' }),
+                                    _react2.default.createElement(
+                                        'label',
+                                        { className: 'button', htmlFor: 'mongoose' },
+                                        'Mongoose'
                                     )
                                 )
                             )

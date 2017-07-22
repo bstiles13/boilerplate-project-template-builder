@@ -68,7 +68,7 @@ class Form extends React.Component {
                 </nav>
                 <nav className="panel" style={this.props.project != 'full' ? style.back : style.front}>
                     <p className="panel-heading">
-                        Applications
+                        Apps
                     </p>
                     <div className="panel-block">
                         <aside className="menu">

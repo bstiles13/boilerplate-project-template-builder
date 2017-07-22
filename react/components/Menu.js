@@ -10,7 +10,7 @@ class Menu extends React.Component {
                 <input onClick={this.props.setProject} id='back' className='checkbox' type='radio' name='menu' value='back'/>
                 <label className='button menu-item' htmlFor='back'>Back</label>
                 <input onClick={this.props.setProject} id='full' className='checkbox' type='radio' name='menu' value='full'/>
-                <label className='button menu-item' htmlFor='full'>Applications</label>
+                <label className='button menu-item' htmlFor='full'>Apps</label>
             </div>
         )
     }

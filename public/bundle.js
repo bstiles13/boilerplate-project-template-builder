@@ -22611,7 +22611,7 @@ var Menu = function (_React$Component) {
                 _react2.default.createElement(
                     'label',
                     { className: 'button menu-item', htmlFor: 'full' },
-                    'Applications'
+                    'Apps'
                 )
             );
         }
@@ -22874,7 +22874,7 @@ var Form = function (_React$Component) {
                     _react2.default.createElement(
                         'p',
                         { className: 'panel-heading' },
-                        'Applications'
+                        'Apps'
                     ),
                     _react2.default.createElement(
                         'div',

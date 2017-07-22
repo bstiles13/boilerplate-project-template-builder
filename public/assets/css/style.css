@@ -49,8 +49,9 @@ html, body {
     z-index: -2
 }
 
-nav {
+.panel-block {
     background-color: PapayaWhip;
+    padding-bottom: 10px;
 }
 
 aside, .menu-list, .button {

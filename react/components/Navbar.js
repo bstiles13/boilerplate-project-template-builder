@@ -9,11 +9,11 @@ class Navbar extends React.Component {
                     <span id='logo'>Cheat Code</span><span id='slogan'>Templates Made Easy</span>
                     </a>
 
-                    <div className="navbar-burger">
+                    {/*<div className="navbar-burger">
                     <span></span>
                     <span></span>
                     <span></span>
-                    </div>
+                    </div>*/}
                 </div>
             </nav>
         )

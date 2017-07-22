@@ -22545,13 +22545,6 @@ var Navbar = function (_React$Component) {
                             { id: "slogan" },
                             "Templates Made Easy"
                         )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "navbar-burger" },
-                        _react2.default.createElement("span", null),
-                        _react2.default.createElement("span", null),
-                        _react2.default.createElement("span", null)
                     )
                 )
             );

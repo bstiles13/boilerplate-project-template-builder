@@ -17,7 +17,7 @@ html, body {
 }
 
 #tint {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -39,6 +39,7 @@ html, body {
 
 #form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -71,4 +72,8 @@ aside, .menu-list, .button {
 
 .menu-item {
     width: 200px;
+}
+
+.button, .menu-item {
+    margin: 1px 0;
 }

@@ -87,7 +87,7 @@ class Form extends React.Component {
                         </aside>
                     </div>
                 </nav>
-                <input id='submit' className='button is-primary is-large' type="submit" value="Create" />
+                <input id='submit' className='button is-primary is-large' type="submit" value="Create" disabled={this.props.project != '' ? '' : 'disabled'} />
             </form>
         )
     }

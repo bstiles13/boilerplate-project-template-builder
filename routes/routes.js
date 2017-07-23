@@ -13,9 +13,10 @@ router.get("/", function(req, res) {
 router.post('/download', function(req, res) {
 
     // console.log(req.body);
-    var request = Object.keys(req.body).map(function(key) {
-        return req.body[key];
-    })
+    // var request = Object.keys(req.body).map(function(key) {
+    //     return req.body[key];
+    // })
+    var request = Object.values(req.body);
     var values = request.join('-');
     console.log(values);
 

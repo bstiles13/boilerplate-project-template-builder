@@ -23,7 +23,7 @@ router.post('/download', function(req, res) {
         //Frontend
         case 'html':
             console.log('html');
-            zipFolder('./#templates/front/html/index-plain', './myproject.zip', function(err) {
+            zipFolder('./#templates/front/html/html-plain', './myproject.zip', function(err) {
                 if(err) {
                     console.log('Zip unsuccessful: ', err);
                 } else {
@@ -35,7 +35,7 @@ router.post('/download', function(req, res) {
         case 'html-jquery':
         case 'jquery':
             console.log('html-jquery');
-            zipFolder('./#templates/front/html/index-jquery', './myproject.zip', function(err) {
+            zipFolder('./#templates/front/html/html-jquery', './myproject.zip', function(err) {
                 if(err) {
                     console.log('Zip unsuccessful: ', err);
                 } else {

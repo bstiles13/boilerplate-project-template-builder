@@ -1,5 +1,3 @@
-/* global moment */
-
 // When the page loads, grab and display all of our chirps
 $.get("/api/all", function(data) {
 

@@ -1,16 +1,9 @@
-/* INSTRUCTOR ONLY (18.3.02)
- *
- * Show off the Mongoose Schema to class
- * ===================================== */
-
 // Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
-// Our newest addition to the dependency family
 var mongoose = require("mongoose");
-// Set mongoose to leverage built in JavaScript ES6 Promises
-mongoose.Promise = Promise;
+var PORT = process.env.PORT || 9000;
 
 // And here's where we establish a connection to the collection
 // We bring the model in like any old module
@@ -31,10 +24,6 @@ app.use(bodyParser.urlencoded({
 
 // Static file support with public folder
 app.use(express.static("public"));
-
-
-/* MONGOOSE FUN STARTS HERE */
-/* -/-/-/-/-/-/-/-/-/-/-/-/ */
 
 // Here's how we hook mongoose with the mongodb database
 // Our database: week18day3mongoose
@@ -84,6 +73,6 @@ app.post("/submit", function(req, res) {
 });
 
 // Listen on port 3000
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log("App running on port 3000!");
 });

@@ -1,8 +1,3 @@
-/* INSTRUCTOR ONLY (18.3.02)
- *
- * Example model
- * ===================================== */
-
 // First, we hook mongoose into the model with a require
 var mongoose = require("mongoose");
 

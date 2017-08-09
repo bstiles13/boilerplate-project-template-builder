@@ -9,4 +9,4 @@ The project was built with React and Bulma on the front end. Node.js, Express ru
 ## Landing page
 Choose your own adventure!
 
-![landingpage view](https://github.com/gwilken/boilerplate-project-template-builder/blob/master/images/bp-01.jpeg)
+![landingpage view](https://github.com/bstiles13/cheat-code-project-builder/blob/master/public/assets/images/cc-01.png)
